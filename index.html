@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/output.css" />
+    <title>Homepage</title>
+
+    <style>
+      .containerAll {
+        width: 85%;
+        margin: 0 auto;
+      }
+
+      .text__img {
+        background: url(./img/bg\ text.svg) no-repeat center center;
+        background-size: cover;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="w-full bg-white z-50 shadow-md sticky top-0 left-0">
+      <nav
+        class="containerAll flex items-center justify-between py-1 containerAll"
+      >
+        <a href="index.html"
+          ><img class="w-28" src="./img/logo.svg" alt="logo img"
+        /></a>
+
+        <ul class="hidden md:flex md:gap-5 md:text-[#7C8DB0] md:items-center">
+          <li>
+            <a class="hover:text-blue-500 pl-9" href="./pages/passenger.html"
+              >Flights</a
+            >
+          </li>
+          <li><a class="hover:text-blue-500 pl-9" href="#">Hotels</a></li>
+          <li><a class="hover:text-blue-500 pl-9" href="#">Packages</a></li>
+
+          <button
+            class="flex items-center justify-center bg-transparent hover:bg-blue-500 hover:text-white ml-6 p-2 rounded-lg"
+          >
+            Sign In
+          </button>
+          <button
+            class="bg-[#605DEC] bg-transparent rounded-lg hover:bg-blue-500 hover:text-white transition-all duration-300 ml-6 p-2"
+          >
+            Sign Up
+          </button>
+        </ul>
+
+        <div class="text-2xl md:hidden">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="relative flex flex-col items-center justify-center">
+        <div
+          class="lg:mt-[130px] relative flex items-center justify-center lg:h-[350px]"
+        >
+          <div class="mt-2">
+            <img class="" src="./img/map.png" alt="img" />
+          </div>
+
+          <div class="absolute flex items-center justify-center">
+            <h1
+              class="text-3xl sm:text-5xl md:text-6xl lg:text-8xl xl:text-9xl w-[60%] text__img text-center font-bold responsive-text h-full"
+            >
+              It’s more than just a trip
+            </h1>
+          </div>
+        </div>
+
+      
+
+        <div class="p-2 rounded-lg shadow-lg max-w-4xl w-fit">
+          <div class="flex">
+            <div class="flex flex-wrap -mx-2 sm:pl-14">
+              <div class="w-full sm:w-1/5 px-2 mb-2 sm:mb-0">
+                <div
+                  class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 flex"
+                >
+                  <img src="./imgs/departure.svg" alt="plane img" />
+                  <input
+                    class="w-full outline-none"
+                    type="text"
+                    placeholder="From where?"
+                  />
+                </div>
+              </div>
+              <div class="w-full sm:w-1/5 px-2 mb-2 sm:mb-0">
+                <div
+                  class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 flex gap-2"
+                >
+                  <img src="./imgs/arrival.svg" alt="plane img" />
+                  <input
+                    type="text"
+                    placeholder="Where to?"
+                    class="w-full focus:outline-none"
+                  />
+                </div>
+              </div>
+              <div class="w-full sm:w-1/5 px-2 mb-2 sm:mb-0">
+                <div
+                  class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 flex gap-2"
+                >
+                  <img src="./imgs/calendar with dates.svg" alt="plane img" />
+                  <input
+                    type="text"
+                    placeholder="Depart - Return?"
+                    class="w-full focus:outline-none"
+                  />
+                </div>
+              </div>
+              <div class="w-full sm:w-1/5 px-2 mb-2 sm:mb-0">
+                <div
+                  class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 flex gap-2"
+                >
+                  <img src="./imgs/person solid.svg" alt="plane img" />
+                  <input
+                    type="text"
+                    placeholder="1 adult"
+                    class="w-full focus:outline-none"
+                  />
+                </div>
+              </div>
+
+              <div class="w-full sm:w-1/5 px-2">
+                <button
+                  class="w-full sm:w-auto px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                >
+                  Search
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="containerAll mt-10 sm:mt-32 lg:mt-40">
+        <h1 class="text-xl font-semibold mb-6">
+          Find your next adventure with these
+          <a href="#" class="text-blue-500">flight deals</a>
+        </h1>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <img
+              src="./imgs/image.svg"
+              alt="The Bund, Shanghai img"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4">
+              <h2 class="text-lg font-semibold">The Bund, Shanghai</h2>
+              <p class="text-gray-600">China's most international city</p>
+              <p class="text-blue-500 font-bold mt-2">$598</p>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <img
+              src="./imgs/image2.svg"
+              alt="Sydney Opera House, Sydney img"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4">
+              <h2 class="text-lg font-semibold">Sydney Opera House, Sydney</h2>
+              <p class="text-gray-600">Take a stroll along the famous harbor</p>
+              <p class="text-blue-500 font-bold mt-2">$981</p>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <img
+              src="./imgs/image3.svg"
+              alt="Kōdaiji Temple, Kyoto img"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4">
+              <h2 class="text-lg font-semibold">Kōdaiji Temple, Kyoto</h2>
+              <p class="text-gray-600">
+                Step back in time in the Gion district
+              </p>
+              <p class="text-blue-500 font-bold mt-2">$633</p>
+            </div>
+          </div>
+          <div
+            class="col-span-1 sm:col-span-2 lg:col-span-3 bg-white rounded-lg shadow-md overflow-hidden"
+          >
+            <img
+              src="./imgs/image4.svg"
+              alt="Tsavo East National Park, Kenya"
+              class="w-full h-72 object-cover"
+            />
+            <div class="p-4">
+              <h2 class="text-lg font-semibold">
+                Tsavo East National Park, Kenya
+              </h2>
+              <p class="text-gray-600">
+                Named after the Tsavo River, and opened in April 1948, Tsavo
+                East National Park is one of the oldest parks in Kenya. It is
+                located in the semi-arid Taru Desert.
+              </p>
+              <p class="text-blue-500 font-bold mt-2">$1,248</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-11">
+        <div class="container mx-auto p-4">
+          <div class="">
+            <h2 class="text-xl font-semibold">
+              Explore unique <span class="text-blue-500">places to stay</span>
+            </h2>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+      
+            <div class="bg-white shadow-md rounded-lg overflow-hidden">
+              <img
+                src="./imgs/exp1.svg"
+                alt="Maldives img"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4">
+                <h3 class="text-xl font-semibold">
+                  Stay among the atolls in Maldives
+                </h3>
+                <p class="text-gray-600 mt-2">
+                  From the 2nd century AD, the islands were known as the 'Money
+                  Isles' due to the abundance of cowry shells, a currency of the
+                  early ages.
+                </p>
+              </div>
+            </div>
+            
+            <div class="bg-white shadow-md rounded-lg overflow-hidden">
+              <img
+                src="./imgs/exp2.svg"
+                alt="Morocco img"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4">
+                <h3 class="text-xl font-semibold">
+                  Experience the Ourika Valley in Morocco
+                </h3>
+                <p class="text-gray-600 mt-2">
+                  Morocco’s Hispano-Moorish architecture blends influences from
+                  Berber culture, Spain, and contemporary artistic currents in
+                  the Middle East.
+                </p>
+              </div>
+            </div>
+        
+            <div class="bg-white shadow-md rounded-lg overflow-hidden">
+              <img
+                src="./imgs/exp3.svg"
+                alt="Mongolia img"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4">
+                <h3 class="text-xl font-semibold">
+                  Live traditionally in Mongolia
+                </h3>
+                <p class="text-gray-600 mt-2">
+                  Traditional Mongolian yurts consist of an angled latticework
+                  of wood or bamboo for walls, ribs, and a wheel.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="text-center mt-6">
+            <button class="bg-blue-500 text-white px-4 py-2 rounded">
+              Explore more stays
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container mx-auto p-4 my-12">
+          <div class="text-center mb-8">
+              <h2 class="text-xl font-semibold">What <span class="text-blue-500">Tripma</span> users are saying</h2>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+             
+              <div class="bg-white shadow-md rounded-lg p-4">
+                  <div class="flex items-start mb-4">
+                      <img src="./imgs/user1.svg" alt="Yifei Chen" class="w-12 h-12 rounded-full mr-4">
+                      <div>
+                          <h3 class="text-lg font-semibold">Yifei Chen</h3>
+                          <p class="text-gray-500">Seoul, South Korea | April 2019</p>
+                          <div class="flex mt-1">
+                              <span class="text-blue-500">★</span>
+                              <span class="text-blue-500">★</span>
+                              <span class="text-blue-500">★</span>
+                              <span class="text-blue-500">★</span>
+                              <span class="text-blue-500">★</span>
+                          </div>
+                      </div>
+                  </div>
+                  <p class="text-gray-600">What a great experience using Tripma! I booked all of my flights for my gap year through Tripma and never had any issues. When I had to cancel a flight because of an emergency, Tripma support helped me <a href="#" class="text-blue-500">read more...</a></p>
+              </div>
+           
+              <div class="bg-white shadow-md rounded-lg p-4">
+                  <div class="flex items-start mb-4">
+                      <img src="./imgs/user2.svg" alt="Kaori Yamaguchi" class="w-12 h-12 rounded-full mr-4">
+                      <div>
+                          <h3 class="text-lg font-semibold">Kaori Yamaguchi</h3>
+                          <p class="text-gray-500">Honolulu, Hawaii | February 2017</p>
+                          <div class="flex mt-1">
+                              <span class="text-blue-500">★</span>
+                              <span class="text-blue-500">★</span>
+                              <span class="text-blue-500">★</span>
+                              <span class="text-blue-500">★</span>
+                              <span class="text-blue-500">★</span>
+                          </div>
+                      </div>
+                  </div>
+                  <p class="text-gray-600">My family and I visit Hawaii every year, and we usually book our flights using other services. Tripma was recommended to us by a long-time friend, and I'm so glad we tried it out! The process was easy and <a href="#" class="text-blue-500">read more...</a></p>
+              </div>
+              
+              <div class="bg-white shadow-md rounded-lg p-4">
+                  <div class="flex items-start mb-4">
+                      <img src="./imgs/user3.svg" alt="Anthony Lewis" class="w-12 h-12 rounded-full mr-4">
+                      <div>
+                          <h3 class="text-lg font-semibold">Anthony Lewis</h3>
+                          <p class="text-gray-500">Berlin, Germany | April 2019</p>
+                          <div class="flex mt-1">
+                              <span class="text-blue-500">★</span>
+                              <span class="text-blue-500">★</span>
+                              <span class="text-blue-500">★</span>
+                              <span class="text-blue-500">★</span>
+                              <span class="text-blue-500">★</span>
+                          </div>
+                      </div>
+                  </div>
+                  <p class="text-gray-600">When I was looking to book my flight to Berlin from LAX, Tripma had the best browsing experience so I figured I'd give it a try. It was my first time using Tripma, but I'd definitely recommend it to a friend and use it for <a href="#" class="text-blue-500">read more...</a></p>
+              </div>
+          </div>
+      </div>
+      </section>
+    </main>
+
+    <footer class="bg-white py-8">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 containerAll">
+          <div class="flex flex-wrap justify-between">
+              <div class="w-full md:w-1/4 mb-6 md:mb-0">
+                  <h2 class="text-xl font-semibold text-blue-600">Tripma</h2>
+                  <ul class="mt-4 space-y-2">
+                      <li><a href="#" class="text-gray-700 hover:text-blue-600">About Tripma</a></li>
+                      <li><a href="#" class="text-gray-700 hover:text-blue-600">How it works</a></li>
+                      <li><a href="#" class="text-gray-700 hover:text-blue-600">Careers</a></li>
+                      <li><a href="#" class="text-gray-700 hover:text-blue-600">Press</a></li>
+                      <li><a href="#" class="text-gray-700 hover:text-blue-600">Blog</a></li>
+                      <li><a href="#" class="text-gray-700 hover:text-blue-600">Forum</a></li>
+                  </ul>
+              </div>
+              <div class="w-full md:w-1/4 mb-6 md:mb-0">
+                  <h2 class="text-xl font-semibold text-gray-900">Partner with us</h2>
+                  <ul class="mt-4 space-y-2">
+                      <li><a href="#" class="text-gray-700 hover:text-blue-600">Partnership programs</a></li>
+                      <li><a href="#" class="text-gray-700 hover:text-blue-600">Affiliate program</a></li>
+                      <li><a href="#" class="text-gray-700 hover:text-blue-600">Connectivity partners</a></li>
+                      <li><a href="#" class="text-gray-700 hover:text-blue-600">Promotions and events</a></li>
+                      <li><a href="#" class="text-gray-700 hover:text-blue-600">Integrations</a></li>
+                      <li><a href="#" class="text-gray-700 hover:text-blue-600">Community</a></li>
+                      <li><a href="#" class="text-gray-700 hover:text-blue-600">Loyalty program</a></li>
+                  </ul>
+              </div>
+              <div class="w-full md:w-1/4 mb-6 md:mb-0">
+                  <h2 class="text-xl font-semibold text-gray-900">Support</h2>
+                  <ul class="mt-4 space-y-2">
+                      <li><a href="#" class="text-gray-700 hover:text-blue-600">Help Center</a></li>
+                      <li><a href="#" class="text-gray-700 hover:text-blue-600">Contact us</a></li>
+                      <li><a href="#" class="text-gray-700 hover:text-blue-600">Privacy policy</a></li>
+                      <li><a href="#" class="text-gray-700 hover:text-blue-600">Terms of service</a></li>
+                      <li><a href="#" class="text-gray-700 hover:text-blue-600">Trust and safety</a></li>
+                      <li><a href="#" class="text-gray-700 hover:text-blue-600">Accessibility</a></li>
+                  </ul>
+              </div>
+              <div class="w-full md:w-1/4">
+                  <h2 class="text-xl font-semibold text-gray-900">Get the app</h2>
+                  <ul class="mt-4 space-y-2">
+                      <li><a href="#" class="text-gray-700 hover:text-blue-600">Tripma for Android</a></li>
+                      <li><a href="#" class="text-gray-700 hover:text-blue-600">Tripma for iOS</a></li>
+                      <li><a href="#" class="text-gray-700 hover:text-blue-600">Mobile site</a></li>
+                  </ul>
+                  <div class="flex mt-6 gap-3 flex-col items-center">
+                      <a href="#"><img src="./img/app store/column/link/app store.svg" alt="App Store img"></a>
+                      <a href="#"><img src="./img/gooogle store/column/link/google play.svg" alt="Google Play img "></a>
+                  </div>
+              </div>
+          </div>
+          <div class="mt-8 border-t pt-8 flex flex-col md:flex-row justify-between items-center">
+              <div class="text-center md:text-left flex justify-between w-full items-center">
+                  <p class="text-sm text-gray-500 order-2 ">&copy; 2020 Tripma incorporated</p>
+                  <div class="flex mt-4 md:mt-0 space-x-4 order-1">
+                      <a href="#" class="text-gray-500 hover:text-blue-600">
+                          <img src="./img/twitter/24/path.svg" alt="twitter img">
+                       </a>
+                      <a href="#" class="text-gray-500 hover:text-blue-600">
+                          <img src="./img/insta/24/instagram.svg" alt="insta img">
+                       </a>
+                      <a href="#" class="text-gray-500 hover:text-blue-600">
+                          <img src="./img/fb2/24/facebook.svg" alt="twitter img">
+                       </a>
+              </div>
+    </footer>          
+  </body>
+</html>
+
+
